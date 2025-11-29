@@ -76,10 +76,10 @@ export const Header: React.FC<LayoutProps> = ({ lang, setLang, theme, toggleThem
           <div className="container mx-auto px-4 h-20 flex items-center justify-between">
               
               {/* Animated Nitecore Iran Logo - Smaller Font Size */}
-              <Link to="/" className="flex items-center group relative overflow-hidden">
+              <Link to="/" className="flex items-center group relative pr-4">
                  <div className="font-black text-xl md:text-2xl italic tracking-tighter transform skew-x-[-5deg]">
                     <span 
-                        className="logo-shine uppercase" 
+                        className="logo-shine uppercase pr-2" 
                         data-text="NITECORE IRAN"
                     >
                         NITECORE IRAN
