@@ -41,5 +41,6 @@ export interface ChatMessage {
   role: 'user' | 'model';
   text: string;
   isError?: boolean;
-  sources?: Array<{ title: string; uri: string }>;
+  // Use any[] for flexibility with raw Gemini GroundingChunk data structure
+  sources?: any[];
 }

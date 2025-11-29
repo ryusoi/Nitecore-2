@@ -45,6 +45,11 @@ export class Watchdog {
     return Watchdog.instance;
   }
 
+  // Public getter for status to fix TypeScript error in UI components
+  public getStatus() {
+    return this.status;
+  }
+
   static log(message: string) {
     Watchdog.instance?.addLog('info', message);
   }

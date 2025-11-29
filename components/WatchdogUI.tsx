@@ -4,7 +4,8 @@ import { AlertTriangle, WifiOff, RefreshCw, Activity } from 'lucide-react';
 import { translations, Language } from '../i18n';
 
 export const WatchdogOverlay: React.FC<{ lang: Language }> = ({ lang }) => {
-  const [status, setStatus] = useState(Watchdog.init()['status']);
+  // Use public method getStatus() instead of accessing private property 'status'
+  const [status, setStatus] = useState(Watchdog.init().getStatus());
   const t = translations[lang];
 
   useEffect(() => {
